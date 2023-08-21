@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductPageActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/libraryButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/barcodeHeaderText"
+                android:layout_width="205dp"
+                android:layout_height="45dp"
+                android:paddingTop="8dp"
+                android:text="Barcode:"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/barcodeText"
+                android:layout_width="205dp"
+                android:layout_height="45dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/productNameHeaderText"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:paddingTop="8dp"
+                android:text="Ürün Adı:"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/productNameText"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/ingredientsHeaderText"
+                android:layout_width="207dp"
+                android:layout_height="45dp"
+                android:paddingTop="8dp"
+                android:text="İçindekiler:"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/ingredientsText"
+                android:layout_width="205dp"
+                android:layout_height="350dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/productDetailButton"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:onClick="showProductDetail"
+        android:text="Ürün Detay Görüntüle"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/libraryButton"
+        app:layout_constraintEnd_toStartOf="@+id/libraryButton"
+        app:layout_constraintHorizontal_bias="0.621"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/libraryButton"
+        android:layout_width="165dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="33dp"
+        android:onClick="addLibrary"
+        android:text="Kütüphaneye Ekle"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

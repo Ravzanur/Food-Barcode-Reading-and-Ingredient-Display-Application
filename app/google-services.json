@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "51856648185",
+    "project_id": "aboutfood-cde38",
+    "storage_bucket": "aboutfood-cde38.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:51856648185:android:8a43f2fb52ea6b956b7f28",
+        "android_client_info": {
+          "package_name": "com.ravzanurcanturk.aboutfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "51856648185-g6jul40ovdrjhdnjbammp7852v9eium3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeMsd95lnBNLBFPZugitgKE-p09-G_eg0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "51856648185-g6jul40ovdrjhdnjbammp7852v9eium3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
